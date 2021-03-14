@@ -5,13 +5,13 @@ import pathlib
 
 USER_FOLDER_NAMES = [
     "blake",
-    # "brad",
-    # "collab",
-    # "devin",
-    # "fatima",
-    # "kevin",
-    # "naz",
-    # "zack",
+    "brad",
+    "collab",
+    "devin",
+    "fatima",
+    "kevin",
+    "naz",
+    "zack",
 ]
 
 CHALLENGE_FOLDER_NAMES = [
