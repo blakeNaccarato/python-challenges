@@ -1,0 +1,125 @@
+{
+    //! Pytest
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["."],
+
+    
+    //! Linting
+
+    "python.linting.enabled": true,
+
+    "python.linting.banditEnabled": true,
+    "python.linting.banditArgs": [
+        "-c",
+        ".lint_config\\.lint.bandit.yaml"
+    ],
+
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--config",
+        ".lint_config\\.lint.ini"
+    ],
+
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file",
+        ".lint_config\\.lint.ini",
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers"
+    ],
+
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        ".lint_config\\.lint.ini"
+    ],
+
+    "restructuredtext.linter.name": "rstcheck",
+    "restructuredtext.linter.extraArgs": [
+        "--config", 
+        ".lint_config\\.lint.ini",
+    ],
+
+
+    
+    //! Line-width related options
+
+
+    //* Black formatter has default line length of 88
+    "python.formatting.provider": "black",
+    "python.sortImports.args": ["--profile", "black"],
+
+
+    //* Soft wrap settings
+
+    //? Set wrapping column
+    "editor.wordWrapColumn": 88,
+    "editor.rulers": [88],
+
+    //? Soft wrap in *.md, *.jsonc (like settings.json), and *.rst
+    "[markdown]": {
+        //* Roughly matches the width of GitHub Markdown
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 124,
+        "editor.rulers": [124],
+    },
+    "[jsonc]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+    "[restructuredtext]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+
+
+    //* Disable JSON format to prevent JSON with Comments reformat
+    "json.format.enable": false,
+
+
+    //* Rewrap configuration
+    "rewrap.autoWrap.enabled": false,
+    "rewrap.wrappingColumn": 88,
+    "rewrap.wholeComment": false,
+
+
+    //* Extension: YAML
+    "yaml.format.printWidth": 88,
+
+
+
+    //! Built-in
+
+
+    //* Format on save. Adjust CTRL+[SHIFT/ALT]+S in "keybindings.json" as well
+    "editor.formatOnSave": true,
+
+
+    //* Enforce whitespace and newlines.
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+
+
+    //* Periodically fetch changes to tracked repo
+    "git.autofetch": true,
+
+
+    
+    //! Extension: reStructuredText
+    //* Disable language server so that "snooty" isn't required in every .venv
+    "restructuredtext.languageServer.disabled": true,
+    "restructuredtext.preview.scrollEditorWithPreview": false,
+
+
+
+    //! Extension: vsicons
+    
+
+    //* Enable the vscode-icons icon theme
+    "workbench.iconTheme": "vscode-icons",    
+    
+    //* Clean up folder appearance
+    "vsicons.presets.hideExplorerArrows": true,
+    
+}

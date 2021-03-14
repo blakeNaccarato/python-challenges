@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "alefragnani.bookmarks",
+        "bierner.markdown-preview-github-styles",
+        "coenraads.bracket-pair-colorizer",
+        "davidanson.vscode-markdownlint",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "goessner.mdmath",
+        "lextudio.restructuredtext",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-vsliveshare.vsliveshare",
+        "redhat.vscode-yaml",
+        "stkb.rewrap",
+        "vscode-icons-team.vscode-icons",
+        "yzhang.markdown-all-in-one",
+    ]
+}
