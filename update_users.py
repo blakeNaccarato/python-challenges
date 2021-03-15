@@ -16,12 +16,13 @@ USER_FOLDER_NAMES = [
 
 CHALLENGE_FOLDER_NAMES = [
     "devin",
+    "20-04",
 ]
 
 root = pathlib.Path()
 
 users = root / "users"
-challenges = users / ".challenges"
+challenges = root / ".challenges"
 
 user_folders = (users / user_folder_name for user_folder_name in USER_FOLDER_NAMES)
 challenge_folders = [challenges / folder_name for folder_name in CHALLENGE_FOLDER_NAMES]
