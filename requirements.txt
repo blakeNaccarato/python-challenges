@@ -16,6 +16,7 @@ bandit
 flake8
 flake8-bugbear
 mypy
+pep8-naming
 pylint
 rstcheck
 
